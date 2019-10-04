@@ -3,13 +3,14 @@ int main()
 {
    int array[100], n, c, d, position, swap;
  
-   printf("Enter number of elements\n");
+   printf("Enter number of elements:");
+
    scanf("%d", &n);
  
-   printf("Enter %d integers\n", n);
- 
-   for (c = 0; c < n; c++)
+   for (c = 0; c < n; c++){
+      printf("Enter element %d:", c+1);
       scanf("%d", &array[c]);
+  }
  
    for (c = 0; c < (n - 1); c++)
    {
